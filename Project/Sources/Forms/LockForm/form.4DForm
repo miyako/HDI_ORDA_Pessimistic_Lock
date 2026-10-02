@@ -1,0 +1,101 @@
+{
+	"destination": "detailScreen",
+	"width": 550,
+	"height": 200,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onUnload"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "841pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text": {
+					"type": "text",
+					"top": 18,
+					"left": 15,
+					"width": 520,
+					"height": 33,
+					"fontWeight": "bold",
+					"text": "This process is locking the contact below and has updated its last name"
+				},
+				"Button": {
+					"type": "button",
+					"top": 135,
+					"left": 215,
+					"width": 80,
+					"height": 20,
+					"action": "cancel",
+					"text": "Unlock",
+					"focusable": false,
+					"method": "ObjectMethods/Button.4dm"
+				},
+				"Variable": {
+					"type": "input",
+					"top": 56,
+					"left": 144,
+					"width": 325,
+					"height": 17,
+					"dataSource": "Form:C1466.contact.firstName+\" \"+Form:C1466.contact.lastName",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 93,
+					"left": 25,
+					"width": 500,
+					"height": 33,
+					"textAlign": "center",
+					"text": "Go back to the main form to continue ..."
+				},
+				"Text2": {
+					"type": "text",
+					"top": 56,
+					"left": 19,
+					"width": 100,
+					"height": 33,
+					"textAlign": "right",
+					"text": "Locked contact"
+				},
+				"Check Box4": {
+					"type": "checkbox",
+					"top": 166,
+					"left": 453,
+					"width": 90,
+					"height": 20,
+					"dataSource": "btnTrace",
+					"text": "Trace",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Text3": {
+					"type": "text",
+					"top": 160,
+					"left": 144,
+					"width": 220,
+					"height": 33,
+					"textAlign": "center",
+					"text": "(Don't click before step 3)"
+				}
+			}
+		}
+	]
+}

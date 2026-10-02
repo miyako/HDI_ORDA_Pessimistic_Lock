@@ -1,0 +1,751 @@
+{
+	"destination": "detailScreen",
+	"windowSizingX": "fixed",
+	"windowMinHeight": 720,
+	"windowMaxHeight": 32000,
+	"width": 1000,
+	"height": 720,
+	"menuBar": "Menu Bar #1",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Tab Control": {
+					"type": "tab",
+					"top": 16,
+					"left": 25,
+					"width": 950,
+					"height": 680,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "_TabTitles",
+					"dataSourceTypeHint": "arrayText",
+					"action": "gotoPage",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text7": {
+					"type": "text",
+					"top": 859,
+					"left": 30,
+					"width": 920,
+					"height": 40,
+					"sizingX": "grow",
+					"textAlign": "center",
+					"fontFamily": "System Font",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"text": "In this part you will learn how to query the DataStore"
+				},
+				"information4": {
+					"type": "input",
+					"top": 371,
+					"left": 60,
+					"width": 800,
+					"height": 305,
+					"sizingX": "grow",
+					"dataSource": "_Descriptions{1}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"information3": {
+					"type": "input",
+					"top": 93,
+					"left": 60,
+					"width": 818,
+					"height": 145,
+					"sizingX": "grow",
+					"dataSource": "mainDescription",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Line9": {
+					"type": "line",
+					"top": 270,
+					"left": 120,
+					"width": 680,
+					"sizingX": "grow",
+					"stroke": "#696969"
+				}
+			}
+		},
+		{
+			"objects": {
+				"information2": {
+					"type": "input",
+					"top": 56,
+					"left": 42,
+					"width": 927,
+					"height": 180,
+					"sizingX": "grow",
+					"dataSource": "_Descriptions{2}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 245,
+					"left": 60,
+					"width": 190,
+					"height": 25,
+					"fontFamily": "System Font",
+					"fontSize": 18,
+					"fontWeight": "bold",
+					"text": "Edit contact example"
+				},
+				"processLockContactButton": {
+					"type": "button",
+					"top": 325,
+					"left": 560,
+					"width": 320,
+					"height": 20,
+					"text": "Another process locks and updates this contact",
+					"focusable": false,
+					"method": "ObjectMethods/processLockContactButton.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"updateContactDirection": {
+					"type": "text",
+					"top": 370,
+					"left": 96,
+					"width": 240,
+					"height": 20,
+					"fontWeight": "bold",
+					"text": "Update the contact and try to save it"
+				},
+				"save_KO_StatusText": {
+					"type": "text",
+					"top": 390,
+					"left": 715,
+					"width": 90,
+					"height": 20,
+					"textAlign": "left",
+					"fontWeight": "bold",
+					"text": "statusText:"
+				},
+				"save_KO_StatusTextValue": {
+					"type": "input",
+					"top": 390,
+					"left": 793,
+					"width": 150,
+					"height": 20,
+					"dataSource": "Form:C1466.saveLockStatus.statusText",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"save_KO_updateContactMessage": {
+					"type": "text",
+					"top": 370,
+					"left": 610,
+					"width": 280,
+					"height": 20,
+					"stroke": "#DC143C",
+					"fontWeight": "bold",
+					"text": "The update contact action failed"
+				},
+				"processUpdateContactButtonDirection4": {
+					"type": "input",
+					"top": 470,
+					"left": 96,
+					"width": 565,
+					"height": 49,
+					"dataSource": "_Directions{3}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"save_KO_LockInfoValue": {
+					"type": "input",
+					"top": 430,
+					"left": 695,
+					"width": 250,
+					"height": 100,
+					"dataSource": "Form:C1466.saveLockStatus.lockInfo",
+					"dataSourceTypeHint": "object",
+					"scrollbarVertical": "automatic",
+					"scrollbarHorizontal": "visible",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"save_KO_LockKindText": {
+					"type": "text",
+					"top": 410,
+					"left": 610,
+					"width": 116,
+					"height": 20,
+					"textAlign": "left",
+					"fontWeight": "bold",
+					"text": "lockKindText:"
+				},
+				"save_KO_LockKindTextValue": {
+					"type": "input",
+					"top": 410,
+					"left": 715,
+					"width": 220,
+					"height": 20,
+					"dataSource": "Form:C1466.saveLockStatus.lockKindText",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"save_KO_Status": {
+					"type": "text",
+					"top": 390,
+					"left": 610,
+					"width": 106,
+					"height": 20,
+					"textAlign": "left",
+					"fontWeight": "bold",
+					"text": "status:"
+				},
+				"save_KO_StatusValue": {
+					"type": "input",
+					"top": 390,
+					"left": 665,
+					"width": 40,
+					"height": 20,
+					"dataSource": "Form:C1466.saveLockStatus.status",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"save_KO_LockInfoText": {
+					"type": "text",
+					"top": 430,
+					"left": 610,
+					"width": 116,
+					"height": 20,
+					"textAlign": "left",
+					"fontWeight": "bold",
+					"text": "lockInfo:"
+				},
+				"Check Box4": {
+					"type": "checkbox",
+					"top": 670,
+					"left": 893,
+					"width": 80,
+					"height": 20,
+					"dataSource": "btnTrace",
+					"text": "Trace",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"contactToLockFirstName": {
+					"type": "input",
+					"top": 280,
+					"left": 140,
+					"width": 150,
+					"height": 20,
+					"dataSource": "Form:C1466.contactToUpdate.firstName",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Text23": {
+					"type": "text",
+					"top": 280,
+					"left": 40,
+					"width": 90,
+					"height": 20,
+					"textAlign": "right",
+					"text": "First name"
+				},
+				"contactToLockLastName": {
+					"type": "input",
+					"top": 280,
+					"left": 380,
+					"width": 150,
+					"height": 20,
+					"dataSource": "Form:C1466.contactToUpdate.lastName",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text24": {
+					"type": "text",
+					"top": 280,
+					"left": 280,
+					"width": 90,
+					"height": 20,
+					"textAlign": "right",
+					"text": "Last name"
+				},
+				"contactToLockState": {
+					"type": "input",
+					"top": 280,
+					"left": 580,
+					"width": 130,
+					"height": 20,
+					"dataSource": "Form:C1466.contactToUpdate.state",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text4": {
+					"type": "text",
+					"top": 280,
+					"left": 484,
+					"width": 90,
+					"height": 20,
+					"textAlign": "right",
+					"text": "State"
+				},
+				"updateContactButton": {
+					"type": "button",
+					"top": 370,
+					"left": 356,
+					"width": 120,
+					"height": 20,
+					"text": "Save",
+					"focusable": false,
+					"method": "ObjectMethods/updateContactButton.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Oval1": {
+					"type": "oval",
+					"top": 325,
+					"left": 60,
+					"width": 25,
+					"height": 26,
+					"fill": "#6495ED",
+					"stroke": "transparent"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 330,
+					"left": 60,
+					"width": 25,
+					"height": 16,
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontFamily": "System Font",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "1"
+				},
+				"Oval2": {
+					"type": "oval",
+					"top": 364,
+					"left": 60,
+					"width": 25,
+					"height": 26,
+					"fill": "#6495ED",
+					"stroke": "transparent"
+				},
+				"Text34": {
+					"type": "text",
+					"top": 369,
+					"left": 60,
+					"width": 25,
+					"height": 16,
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontFamily": "System Font",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "2"
+				},
+				"Oval3": {
+					"type": "oval",
+					"top": 434,
+					"left": 60,
+					"width": 25,
+					"height": 26,
+					"fill": "#6495ED",
+					"stroke": "transparent"
+				},
+				"Text35": {
+					"type": "text",
+					"top": 439,
+					"left": 60,
+					"width": 25,
+					"height": 16,
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontFamily": "System Font",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "3"
+				},
+				"updateContactButtonDirection": {
+					"type": "input",
+					"top": 394,
+					"left": 96,
+					"width": 501,
+					"height": 33,
+					"dataSource": "_Directions{1}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"processUpdateContactButtonDirection6": {
+					"type": "text",
+					"top": 328,
+					"left": 96,
+					"width": 460,
+					"height": 20,
+					"fontWeight": "bold",
+					"text": "Click on the \"Another process locks and updates this contact\" button"
+				},
+				"lockContactButton": {
+					"type": "button",
+					"top": 440,
+					"left": 356,
+					"width": 120,
+					"height": 20,
+					"text": "Lock",
+					"focusable": false,
+					"method": "ObjectMethods/lockContactButton.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"lockContactDirection1": {
+					"type": "text",
+					"top": 440,
+					"left": 96,
+					"width": 159,
+					"height": 20,
+					"fontWeight": "bold",
+					"text": "Try to lock the contact"
+				},
+				"reloadAndLockButton": {
+					"type": "button",
+					"top": 540,
+					"left": 359,
+					"width": 130,
+					"height": 20,
+					"text": "Reload and lock",
+					"focusable": false,
+					"method": "ObjectMethods/reloadAndLockButton.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"reload_OK_lockContactMessage": {
+					"type": "text",
+					"top": 540,
+					"left": 610,
+					"width": 280,
+					"height": 20,
+					"stroke": "#800080",
+					"fontWeight": "bold",
+					"text": "The contact has been reloaded and locked"
+				},
+				"Oval9": {
+					"type": "oval",
+					"top": 534,
+					"left": 60,
+					"width": 25,
+					"height": 26,
+					"fill": "#6495ED",
+					"stroke": "transparent"
+				},
+				"Text18": {
+					"type": "text",
+					"top": 539,
+					"left": 60,
+					"width": 25,
+					"height": 16,
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontFamily": "System Font",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "4"
+				},
+				"processUpdateContactButtonDirection7": {
+					"type": "input",
+					"top": 567,
+					"left": 96,
+					"width": 559,
+					"height": 49,
+					"dataSource": "_Directions{4}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"unlockContactDirection2": {
+					"type": "text",
+					"top": 540,
+					"left": 96,
+					"width": 270,
+					"height": 20,
+					"fontWeight": "bold",
+					"text": "Click on the \"Reload and lock\" button"
+				},
+				"updateContactDirection1": {
+					"type": "text",
+					"top": 640,
+					"left": 96,
+					"width": 250,
+					"height": 20,
+					"fontWeight": "bold",
+					"text": "Update the contact and try to save it"
+				},
+				"updateContactButton2": {
+					"type": "button",
+					"top": 640,
+					"left": 359,
+					"width": 120,
+					"height": 20,
+					"text": "Save",
+					"focusable": false,
+					"method": "ObjectMethods/updateContactButton2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"updateContactButtonDirection1": {
+					"type": "input",
+					"top": 663,
+					"left": 96,
+					"width": 777,
+					"height": 17,
+					"dataSource": "_Directions{2}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"lock_KO_lockContactMessage": {
+					"type": "text",
+					"top": 440,
+					"left": 610,
+					"width": 250,
+					"height": 20,
+					"stroke": "#DC143C",
+					"fontWeight": "bold",
+					"text": "The lock contact action failed"
+				},
+				"lock_KO_Status": {
+					"type": "text",
+					"top": 461,
+					"left": 610,
+					"width": 131,
+					"height": 20,
+					"textAlign": "left",
+					"fontWeight": "bold",
+					"text": "status:"
+				},
+				"lock_KO_StatusValue": {
+					"type": "input",
+					"top": 461,
+					"left": 665,
+					"width": 40,
+					"height": 20,
+					"dataSource": "Form:C1466.saveLockStatus.status",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"lock_KO_StatusText": {
+					"type": "text",
+					"top": 461,
+					"left": 715,
+					"width": 90,
+					"height": 20,
+					"textAlign": "left",
+					"fontWeight": "bold",
+					"text": "statusText:"
+				},
+				"lock_KO_StatusTextValue": {
+					"type": "input",
+					"top": 461,
+					"left": 793,
+					"width": 150,
+					"height": 20,
+					"dataSource": "Form:C1466.saveLockStatus.statusText",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"save_OK_ContactMessage": {
+					"type": "text",
+					"top": 640,
+					"left": 610,
+					"width": 280,
+					"height": 20,
+					"stroke": "#008000",
+					"fontWeight": "bold",
+					"text": "The contact has been sucessfully saved"
+				},
+				"Oval10": {
+					"type": "oval",
+					"top": 637,
+					"left": 60,
+					"width": 25,
+					"height": 26,
+					"fill": "#6495ED",
+					"stroke": "transparent"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 642,
+					"left": 60,
+					"width": 25,
+					"height": 16,
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontFamily": "System Font",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "5"
+				}
+			}
+		}
+	],
+	"editor": {
+		"groups": {
+			"Groupe29": [
+				"Oval1",
+				"Text9"
+			],
+			"Group1": [
+				"Oval2",
+				"Text34"
+			],
+			"Group2": [
+				"Oval3",
+				"Text35"
+			],
+			"Group8": [
+				"Oval9",
+				"Text18"
+			],
+			"Groupe30": [
+				"Oval10",
+				"Text3"
+			]
+		}
+	}
+}
