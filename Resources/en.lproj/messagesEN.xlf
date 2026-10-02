@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+	<file datatype="plaintext" original="messages" source-language="en" target-language="en">
+		<body>
+			<trans-unit id="HDI_Title" resname="HDI_Title">
+				<source>work with pessimistic locking in ORDA?</source>
+				<target>work with pessimistic locking in ORDA?</target>
+			</trans-unit>
+			<trans-unit id="HDI_Info" resname="HDI_Info">
+				<source>ORDA</source>
+				<target>ORDA</target>
+			</trans-unit>
+			<trans-unit id="BtnClose" resname="BtnClose">
+				<source>Close</source>
+				<target>Close</target>
+			</trans-unit>
+			<trans-unit id="ErrorViewProMain" resname="ErrorViewProMain">
+				<source>Sorry, this “How do I” (HDI) example demonstrates a 4D View Pro feature.</source>
+				<target>Sorry, this “How do I” (HDI) example demonstrates a 4D View Pro feature.</target>
+			</trans-unit>
+			<trans-unit id="ErrorViewProSub" resname="ErrorViewProSub">
+				<source>You must have a valid 4D View Pro license to continue.</source>
+				<target>You must have a valid 4D View Pro license to continue.</target>
+			</trans-unit>
+			<trans-unit id="ErrorWriteProMain" resname="ErrorWriteProMain">
+				<source>Sorry, this “How do I” (HDI) example demonstrates a 4D Write Pro feature.</source>
+				<target>Sorry, this “How do I” (HDI) example demonstrates a 4D Write Pro feature.</target>
+			</trans-unit>
+			<trans-unit id="ErrorWriteProSub" resname="ErrorWriteProSub">
+				<source>You must have a valid 4D Write Pro license to continue.</source>
+				<target>You must have a valid 4D Write Pro license to continue.</target>
+			</trans-unit>
+			<trans-unit id="AlertContactAlreadyLocked" resname="AlertContactAlreadyLocked">
+				<source>The contact is already locked by the other process&#13;&#13;Unlock the contact to continue</source>
+				<target>The contact is already locked by the other process&#13;&#13;Unlock the contact to continue</target>
+			</trans-unit>
+			<trans-unit id="AlertProcessLocksContact" resname="AlertProcessLocksContact">
+				<source>This creates another process which locks and updates the edited contact.&#13;&#13;So the stamp will change</source>
+				<target>This creates another process which locks and updates the edited contact.&#13;&#13;So the stamp will change</target>
+			</trans-unit>
+			<trans-unit id="AlertContactUnlocked" resname="AlertContactUnlocked">
+				<source>The contact {firstName} {lastName} has been successfully unlocked</source>
+				<target>The contact {firstName} {lastName} has been successfully unlocked</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

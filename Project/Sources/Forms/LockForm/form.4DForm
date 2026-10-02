@@ -1,0 +1,106 @@
+{
+	"destination": "detailScreen",
+	"width": 550,
+	"height": 200,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onUnload"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "841pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text": {
+					"type": "text",
+					"top": 18,
+					"left": 15,
+					"width": 520,
+					"height": 33,
+					"fontWeight": "bold",
+					"text": ":xliff:LockForm_Title",
+					"stroke": "automatic"
+				},
+				"Button": {
+					"type": "button",
+					"top": 135,
+					"left": 215,
+					"width": 80,
+					"action": "cancel",
+					"text": ":xliff:LockForm_BtnUnlock",
+					"focusable": false,
+					"method": "ObjectMethods/Button.4dm",
+					"class": "default"
+				},
+				"Variable": {
+					"type": "input",
+					"top": 56,
+					"left": 144,
+					"width": 325,
+					"height": 17,
+					"dataSource": "Form:C1466.contact.firstName+\" \"+Form:C1466.contact.lastName",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"stroke": "automatic"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 93,
+					"left": 25,
+					"width": 500,
+					"height": 33,
+					"textAlign": "center",
+					"text": ":xliff:LockForm_GoBack",
+					"stroke": "automatic"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 56,
+					"left": 19,
+					"width": 100,
+					"height": 33,
+					"textAlign": "right",
+					"text": ":xliff:LockForm_LabelLockedContact",
+					"stroke": "automatic"
+				},
+				"Check Box4": {
+					"type": "checkbox",
+					"top": 166,
+					"left": 453,
+					"width": 90,
+					"height": 20,
+					"dataSource": "btnTrace",
+					"text": ":xliff:LockForm_Trace",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Text3": {
+					"type": "text",
+					"top": 160,
+					"left": 144,
+					"width": 220,
+					"height": 33,
+					"textAlign": "center",
+					"text": ":xliff:LockForm_DontClick",
+					"stroke": "automatic"
+				}
+			}
+		}
+	]
+}

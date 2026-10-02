@@ -1,0 +1,805 @@
+{
+	"destination": "detailScreen",
+	"windowSizingX": "fixed",
+	"windowMinHeight": 720,
+	"windowMaxHeight": 32000,
+	"width": 1000,
+	"height": 720,
+	"menuBar": "Menu Bar #1",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Tab Control": {
+					"type": "tab",
+					"top": 16,
+					"left": 25,
+					"width": 950,
+					"height": 680,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "_TabTitles",
+					"dataSourceTypeHint": "arrayText",
+					"action": "gotoPage",
+					"events": [
+						"onClick"
+					]
+				},
+				"refReloadedColour": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 1,
+					"height": 1,
+					"class": "ref-reloaded-colour",
+					"stroke": "transparent"
+				},
+				"refSavedColour": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 1,
+					"height": 1,
+					"class": "ref-saved-colour",
+					"stroke": "transparent"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text7": {
+					"type": "text",
+					"top": 859,
+					"left": 30,
+					"width": 920,
+					"height": 40,
+					"sizingX": "grow",
+					"textAlign": "center",
+					"fontFamily": "System Font",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"text": ":xliff:HDI2_IntroQueryDataStore",
+					"stroke": "automatic"
+				},
+				"information4": {
+					"type": "input",
+					"top": 371,
+					"left": 60,
+					"width": 800,
+					"height": 305,
+					"sizingX": "grow",
+					"dataSource": "_Descriptions{1}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"stroke": "automatic"
+				},
+				"information3": {
+					"type": "input",
+					"top": 93,
+					"left": 60,
+					"width": 818,
+					"height": 145,
+					"sizingX": "grow",
+					"dataSource": "mainDescription",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"stroke": "automatic"
+				},
+				"Line9": {
+					"type": "line",
+					"top": 270,
+					"left": 120,
+					"width": 680,
+					"sizingX": "grow",
+					"class": "muted"
+				}
+			}
+		},
+		{
+			"objects": {
+				"information2": {
+					"type": "input",
+					"top": 56,
+					"left": 42,
+					"width": 927,
+					"height": 180,
+					"sizingX": "grow",
+					"dataSource": "_Descriptions{2}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"stroke": "automatic"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 245,
+					"left": 60,
+					"width": 190,
+					"height": 25,
+					"fontFamily": "System Font",
+					"fontSize": 18,
+					"fontWeight": "bold",
+					"text": ":xliff:HDI2_EditContactTitle",
+					"stroke": "automatic"
+				},
+				"processLockContactButton": {
+					"type": "button",
+					"top": 325,
+					"left": 560,
+					"width": 320,
+					"text": ":xliff:HDI2_BtnProcessLock",
+					"focusable": false,
+					"method": "ObjectMethods/processLockContactButton.4dm",
+					"events": [
+						"onClick"
+					],
+					"class": "default"
+				},
+				"updateContactDirection": {
+					"type": "text",
+					"top": 370,
+					"left": 96,
+					"width": 240,
+					"height": 20,
+					"fontWeight": "bold",
+					"text": ":xliff:HDI2_DirUpdateContact",
+					"stroke": "automatic"
+				},
+				"save_KO_StatusText": {
+					"type": "text",
+					"top": 390,
+					"left": 715,
+					"width": 90,
+					"height": 20,
+					"textAlign": "left",
+					"fontWeight": "bold",
+					"text": ":xliff:HDI2_LabelStatusText",
+					"stroke": "automatic"
+				},
+				"save_KO_StatusTextValue": {
+					"type": "input",
+					"top": 390,
+					"left": 793,
+					"width": 150,
+					"height": 20,
+					"dataSource": "Form:C1466.saveLockStatus.statusText",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"stroke": "automatic"
+				},
+				"save_KO_updateContactMessage": {
+					"type": "text",
+					"top": 370,
+					"left": 610,
+					"width": 280,
+					"height": 20,
+					"fontWeight": "bold",
+					"text": ":xliff:HDI2_MsgUpdateFailed",
+					"class": "msg-error"
+				},
+				"processUpdateContactButtonDirection4": {
+					"type": "input",
+					"top": 470,
+					"left": 96,
+					"width": 565,
+					"height": 49,
+					"dataSource": "_Directions{3}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"stroke": "automatic"
+				},
+				"save_KO_LockInfoValue": {
+					"type": "input",
+					"top": 430,
+					"left": 695,
+					"width": 250,
+					"height": 100,
+					"dataSource": "Form:C1466.saveLockStatus.lockInfo",
+					"dataSourceTypeHint": "object",
+					"scrollbarVertical": "automatic",
+					"scrollbarHorizontal": "visible",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"stroke": "automatic",
+					"fill": "automatic"
+				},
+				"save_KO_LockKindText": {
+					"type": "text",
+					"top": 410,
+					"left": 610,
+					"width": 116,
+					"height": 20,
+					"textAlign": "left",
+					"fontWeight": "bold",
+					"text": ":xliff:HDI2_LabelLockKindText",
+					"stroke": "automatic"
+				},
+				"save_KO_LockKindTextValue": {
+					"type": "input",
+					"top": 410,
+					"left": 715,
+					"width": 220,
+					"height": 20,
+					"dataSource": "Form:C1466.saveLockStatus.lockKindText",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"stroke": "automatic"
+				},
+				"save_KO_Status": {
+					"type": "text",
+					"top": 390,
+					"left": 610,
+					"width": 106,
+					"height": 20,
+					"textAlign": "left",
+					"fontWeight": "bold",
+					"text": ":xliff:HDI2_LabelStatus",
+					"stroke": "automatic"
+				},
+				"save_KO_StatusValue": {
+					"type": "input",
+					"top": 390,
+					"left": 665,
+					"width": 40,
+					"height": 20,
+					"dataSource": "Form:C1466.saveLockStatus.status",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"stroke": "automatic"
+				},
+				"save_KO_LockInfoText": {
+					"type": "text",
+					"top": 430,
+					"left": 610,
+					"width": 116,
+					"height": 20,
+					"textAlign": "left",
+					"fontWeight": "bold",
+					"text": ":xliff:HDI2_LabelLockInfo",
+					"stroke": "automatic"
+				},
+				"Check Box4": {
+					"type": "checkbox",
+					"top": 670,
+					"left": 893,
+					"width": 80,
+					"height": 20,
+					"dataSource": "btnTrace",
+					"text": ":xliff:HDI2_Trace",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"contactToLockFirstName": {
+					"type": "input",
+					"top": 280,
+					"left": 140,
+					"width": 150,
+					"height": 20,
+					"dataSource": "Form:C1466.contactToUpdate.firstName",
+					"dragging": "none",
+					"dropping": "none",
+					"stroke": "automatic",
+					"fill": "automatic"
+				},
+				"Text23": {
+					"type": "text",
+					"top": 280,
+					"left": 40,
+					"width": 90,
+					"height": 20,
+					"textAlign": "right",
+					"text": ":xliff:HDI2_LabelFirstName",
+					"stroke": "automatic"
+				},
+				"contactToLockLastName": {
+					"type": "input",
+					"top": 280,
+					"left": 380,
+					"width": 150,
+					"height": 20,
+					"dataSource": "Form:C1466.contactToUpdate.lastName",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"stroke": "automatic",
+					"fill": "automatic"
+				},
+				"Text24": {
+					"type": "text",
+					"top": 280,
+					"left": 280,
+					"width": 90,
+					"height": 20,
+					"textAlign": "right",
+					"text": ":xliff:HDI2_LabelLastName",
+					"stroke": "automatic"
+				},
+				"contactToLockState": {
+					"type": "input",
+					"top": 280,
+					"left": 580,
+					"width": 130,
+					"height": 20,
+					"dataSource": "Form:C1466.contactToUpdate.state",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"stroke": "automatic",
+					"fill": "automatic"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 280,
+					"left": 484,
+					"width": 90,
+					"height": 20,
+					"textAlign": "right",
+					"text": ":xliff:HDI2_LabelState",
+					"stroke": "automatic"
+				},
+				"updateContactButton": {
+					"type": "button",
+					"top": 370,
+					"left": 356,
+					"width": 120,
+					"text": ":xliff:HDI2_BtnSave",
+					"focusable": false,
+					"method": "ObjectMethods/updateContactButton.4dm",
+					"events": [
+						"onClick"
+					],
+					"class": "default"
+				},
+				"Oval1": {
+					"type": "oval",
+					"top": 325,
+					"left": 60,
+					"width": 25,
+					"height": 26,
+					"stroke": "transparent",
+					"class": "step-badge"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 330,
+					"left": 60,
+					"width": 25,
+					"height": 16,
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontFamily": "System Font",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "1"
+				},
+				"Oval2": {
+					"type": "oval",
+					"top": 364,
+					"left": 60,
+					"width": 25,
+					"height": 26,
+					"stroke": "transparent",
+					"class": "step-badge"
+				},
+				"Text34": {
+					"type": "text",
+					"top": 369,
+					"left": 60,
+					"width": 25,
+					"height": 16,
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontFamily": "System Font",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "2"
+				},
+				"Oval3": {
+					"type": "oval",
+					"top": 434,
+					"left": 60,
+					"width": 25,
+					"height": 26,
+					"stroke": "transparent",
+					"class": "step-badge"
+				},
+				"Text35": {
+					"type": "text",
+					"top": 439,
+					"left": 60,
+					"width": 25,
+					"height": 16,
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontFamily": "System Font",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "3"
+				},
+				"updateContactButtonDirection": {
+					"type": "input",
+					"top": 394,
+					"left": 96,
+					"width": 501,
+					"height": 33,
+					"dataSource": "_Directions{1}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"stroke": "automatic"
+				},
+				"processUpdateContactButtonDirection6": {
+					"type": "text",
+					"top": 328,
+					"left": 96,
+					"width": 460,
+					"height": 20,
+					"fontWeight": "bold",
+					"text": ":xliff:HDI2_DirClickProcessLock",
+					"stroke": "automatic"
+				},
+				"lockContactButton": {
+					"type": "button",
+					"top": 440,
+					"left": 356,
+					"width": 120,
+					"text": ":xliff:HDI2_BtnLock",
+					"focusable": false,
+					"method": "ObjectMethods/lockContactButton.4dm",
+					"events": [
+						"onClick"
+					],
+					"class": "default"
+				},
+				"lockContactDirection1": {
+					"type": "text",
+					"top": 440,
+					"left": 96,
+					"width": 159,
+					"height": 20,
+					"fontWeight": "bold",
+					"text": ":xliff:HDI2_DirTryLock",
+					"stroke": "automatic"
+				},
+				"reloadAndLockButton": {
+					"type": "button",
+					"top": 540,
+					"left": 359,
+					"width": 130,
+					"text": ":xliff:HDI2_BtnReloadAndLock",
+					"focusable": false,
+					"method": "ObjectMethods/reloadAndLockButton.4dm",
+					"events": [
+						"onClick"
+					],
+					"class": "default"
+				},
+				"reload_OK_lockContactMessage": {
+					"type": "text",
+					"top": 540,
+					"left": 610,
+					"width": 280,
+					"height": 20,
+					"fontWeight": "bold",
+					"text": ":xliff:HDI2_MsgReloaded",
+					"class": "msg-reloaded"
+				},
+				"Oval9": {
+					"type": "oval",
+					"top": 534,
+					"left": 60,
+					"width": 25,
+					"height": 26,
+					"stroke": "transparent",
+					"class": "step-badge"
+				},
+				"Text18": {
+					"type": "text",
+					"top": 539,
+					"left": 60,
+					"width": 25,
+					"height": 16,
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontFamily": "System Font",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "4"
+				},
+				"processUpdateContactButtonDirection7": {
+					"type": "input",
+					"top": 567,
+					"left": 96,
+					"width": 559,
+					"height": 49,
+					"dataSource": "_Directions{4}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"stroke": "automatic"
+				},
+				"unlockContactDirection2": {
+					"type": "text",
+					"top": 540,
+					"left": 96,
+					"width": 270,
+					"height": 20,
+					"fontWeight": "bold",
+					"text": ":xliff:HDI2_DirClickReloadAndLock",
+					"stroke": "automatic"
+				},
+				"updateContactDirection1": {
+					"type": "text",
+					"top": 640,
+					"left": 96,
+					"width": 250,
+					"height": 20,
+					"fontWeight": "bold",
+					"text": ":xliff:HDI2_DirUpdateContact",
+					"stroke": "automatic"
+				},
+				"updateContactButton2": {
+					"type": "button",
+					"top": 640,
+					"left": 359,
+					"width": 120,
+					"text": ":xliff:HDI2_BtnSave",
+					"focusable": false,
+					"method": "ObjectMethods/updateContactButton2.4dm",
+					"events": [
+						"onClick"
+					],
+					"class": "default"
+				},
+				"updateContactButtonDirection1": {
+					"type": "input",
+					"top": 663,
+					"left": 96,
+					"width": 777,
+					"height": 17,
+					"dataSource": "_Directions{2}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"stroke": "automatic"
+				},
+				"lock_KO_lockContactMessage": {
+					"type": "text",
+					"top": 440,
+					"left": 610,
+					"width": 250,
+					"height": 20,
+					"fontWeight": "bold",
+					"text": ":xliff:HDI2_MsgLockFailed",
+					"class": "msg-error"
+				},
+				"lock_KO_Status": {
+					"type": "text",
+					"top": 461,
+					"left": 610,
+					"width": 131,
+					"height": 20,
+					"textAlign": "left",
+					"fontWeight": "bold",
+					"text": ":xliff:HDI2_LabelStatus",
+					"stroke": "automatic"
+				},
+				"lock_KO_StatusValue": {
+					"type": "input",
+					"top": 461,
+					"left": 665,
+					"width": 40,
+					"height": 20,
+					"dataSource": "Form:C1466.saveLockStatus.status",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"stroke": "automatic"
+				},
+				"lock_KO_StatusText": {
+					"type": "text",
+					"top": 461,
+					"left": 715,
+					"width": 90,
+					"height": 20,
+					"textAlign": "left",
+					"fontWeight": "bold",
+					"text": ":xliff:HDI2_LabelStatusText",
+					"stroke": "automatic"
+				},
+				"lock_KO_StatusTextValue": {
+					"type": "input",
+					"top": 461,
+					"left": 793,
+					"width": 150,
+					"height": 20,
+					"dataSource": "Form:C1466.saveLockStatus.statusText",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"stroke": "automatic"
+				},
+				"save_OK_ContactMessage": {
+					"type": "text",
+					"top": 640,
+					"left": 610,
+					"width": 280,
+					"height": 20,
+					"fontWeight": "bold",
+					"text": ":xliff:HDI2_MsgSaved",
+					"class": "msg-success"
+				},
+				"Oval10": {
+					"type": "oval",
+					"top": 637,
+					"left": 60,
+					"width": 25,
+					"height": 26,
+					"stroke": "transparent",
+					"class": "step-badge"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 642,
+					"left": 60,
+					"width": 25,
+					"height": 16,
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontFamily": "System Font",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "5"
+				}
+			}
+		}
+	],
+	"editor": {
+		"groups": {
+			"Groupe29": [
+				"Oval1",
+				"Text9"
+			],
+			"Group1": [
+				"Oval2",
+				"Text34"
+			],
+			"Group2": [
+				"Oval3",
+				"Text35"
+			],
+			"Group8": [
+				"Oval9",
+				"Text18"
+			],
+			"Groupe30": [
+				"Oval10",
+				"Text3"
+			]
+		}
+	}
+}

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+	<file datatype="plaintext" original="HDI2" source-language="en" target-language="ja">
+		<body>
+			<trans-unit id="HDI2_IntroQueryDataStore" resname="HDI2_IntroQueryDataStore">
+				<source>In this part you will learn how to query the DataStore</source>
+				<target>この章では DataStore を検索する方法を学びます</target>
+			</trans-unit>
+			<trans-unit id="HDI2_EditContactTitle" resname="HDI2_EditContactTitle">
+				<source>Edit contact example</source>
+				<target>連絡先の編集例</target>
+			</trans-unit>
+			<trans-unit id="HDI2_BtnProcessLock" resname="HDI2_BtnProcessLock">
+				<source>Another process locks and updates this contact</source>
+				<target>別のプロセスがこの連絡先をロックして更新する</target>
+			</trans-unit>
+			<trans-unit id="HDI2_DirUpdateContact" resname="HDI2_DirUpdateContact">
+				<source>Update the contact and try to save it</source>
+				<target>連絡先を更新して保存してみる</target>
+			</trans-unit>
+			<trans-unit id="HDI2_LabelStatusText" resname="HDI2_LabelStatusText">
+				<source>statusText:</source>
+				<target>statusText:</target>
+			</trans-unit>
+			<trans-unit id="HDI2_LabelStatus" resname="HDI2_LabelStatus">
+				<source>status:</source>
+				<target>status:</target>
+			</trans-unit>
+			<trans-unit id="HDI2_LabelLockKindText" resname="HDI2_LabelLockKindText">
+				<source>lockKindText:</source>
+				<target>lockKindText:</target>
+			</trans-unit>
+			<trans-unit id="HDI2_LabelLockInfo" resname="HDI2_LabelLockInfo">
+				<source>lockInfo:</source>
+				<target>lockInfo:</target>
+			</trans-unit>
+			<trans-unit id="HDI2_MsgUpdateFailed" resname="HDI2_MsgUpdateFailed">
+				<source>The update contact action failed</source>
+				<target>連絡先の更新に失敗しました</target>
+			</trans-unit>
+			<trans-unit id="HDI2_Trace" resname="HDI2_Trace">
+				<source>Trace</source>
+				<target>トレース</target>
+			</trans-unit>
+			<trans-unit id="HDI2_LabelFirstName" resname="HDI2_LabelFirstName">
+				<source>First name</source>
+				<target>名</target>
+			</trans-unit>
+			<trans-unit id="HDI2_LabelLastName" resname="HDI2_LabelLastName">
+				<source>Last name</source>
+				<target>姓</target>
+			</trans-unit>
+			<trans-unit id="HDI2_LabelState" resname="HDI2_LabelState">
+				<source>State</source>
+				<target>州</target>
+			</trans-unit>
+			<trans-unit id="HDI2_BtnSave" resname="HDI2_BtnSave">
+				<source>Save</source>
+				<target>保存</target>
+			</trans-unit>
+			<trans-unit id="HDI2_DirClickProcessLock" resname="HDI2_DirClickProcessLock">
+				<source>Click on the "Another process locks and updates this contact" button</source>
+				<target>「別のプロセスがこの連絡先をロックして更新する」ボタンをクリックする</target>
+			</trans-unit>
+			<trans-unit id="HDI2_BtnLock" resname="HDI2_BtnLock">
+				<source>Lock</source>
+				<target>ロック</target>
+			</trans-unit>
+			<trans-unit id="HDI2_DirTryLock" resname="HDI2_DirTryLock">
+				<source>Try to lock the contact</source>
+				<target>連絡先をロックしてみる</target>
+			</trans-unit>
+			<trans-unit id="HDI2_BtnReloadAndLock" resname="HDI2_BtnReloadAndLock">
+				<source>Reload and lock</source>
+				<target>再読み込みしてロック</target>
+			</trans-unit>
+			<trans-unit id="HDI2_MsgReloaded" resname="HDI2_MsgReloaded">
+				<source>The contact has been reloaded and locked</source>
+				<target>連絡先を再読み込みしてロックしました</target>
+			</trans-unit>
+			<trans-unit id="HDI2_DirClickReloadAndLock" resname="HDI2_DirClickReloadAndLock">
+				<source>Click on the "Reload and lock" button</source>
+				<target>「再読み込みしてロック」ボタンをクリックする</target>
+			</trans-unit>
+			<trans-unit id="HDI2_MsgLockFailed" resname="HDI2_MsgLockFailed">
+				<source>The lock contact action failed</source>
+				<target>連絡先のロックに失敗しました</target>
+			</trans-unit>
+			<trans-unit id="HDI2_MsgSaved" resname="HDI2_MsgSaved">
+				<source>The contact has been successfully saved</source>
+				<target>連絡先を保存しました</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

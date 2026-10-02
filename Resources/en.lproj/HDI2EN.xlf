@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+	<file datatype="plaintext" original="HDI2" source-language="en" target-language="en">
+		<body>
+			<trans-unit id="HDI2_IntroQueryDataStore" resname="HDI2_IntroQueryDataStore">
+				<source>In this part you will learn how to query the DataStore</source>
+				<target>In this part you will learn how to query the DataStore</target>
+			</trans-unit>
+			<trans-unit id="HDI2_EditContactTitle" resname="HDI2_EditContactTitle">
+				<source>Edit contact example</source>
+				<target>Edit contact example</target>
+			</trans-unit>
+			<trans-unit id="HDI2_BtnProcessLock" resname="HDI2_BtnProcessLock">
+				<source>Another process locks and updates this contact</source>
+				<target>Another process locks and updates this contact</target>
+			</trans-unit>
+			<trans-unit id="HDI2_DirUpdateContact" resname="HDI2_DirUpdateContact">
+				<source>Update the contact and try to save it</source>
+				<target>Update the contact and try to save it</target>
+			</trans-unit>
+			<trans-unit id="HDI2_LabelStatusText" resname="HDI2_LabelStatusText">
+				<source>statusText:</source>
+				<target>statusText:</target>
+			</trans-unit>
+			<trans-unit id="HDI2_LabelStatus" resname="HDI2_LabelStatus">
+				<source>status:</source>
+				<target>status:</target>
+			</trans-unit>
+			<trans-unit id="HDI2_LabelLockKindText" resname="HDI2_LabelLockKindText">
+				<source>lockKindText:</source>
+				<target>lockKindText:</target>
+			</trans-unit>
+			<trans-unit id="HDI2_LabelLockInfo" resname="HDI2_LabelLockInfo">
+				<source>lockInfo:</source>
+				<target>lockInfo:</target>
+			</trans-unit>
+			<trans-unit id="HDI2_MsgUpdateFailed" resname="HDI2_MsgUpdateFailed">
+				<source>The update contact action failed</source>
+				<target>The update contact action failed</target>
+			</trans-unit>
+			<trans-unit id="HDI2_Trace" resname="HDI2_Trace">
+				<source>Trace</source>
+				<target>Trace</target>
+			</trans-unit>
+			<trans-unit id="HDI2_LabelFirstName" resname="HDI2_LabelFirstName">
+				<source>First name</source>
+				<target>First name</target>
+			</trans-unit>
+			<trans-unit id="HDI2_LabelLastName" resname="HDI2_LabelLastName">
+				<source>Last name</source>
+				<target>Last name</target>
+			</trans-unit>
+			<trans-unit id="HDI2_LabelState" resname="HDI2_LabelState">
+				<source>State</source>
+				<target>State</target>
+			</trans-unit>
+			<trans-unit id="HDI2_BtnSave" resname="HDI2_BtnSave">
+				<source>Save</source>
+				<target>Save</target>
+			</trans-unit>
+			<trans-unit id="HDI2_DirClickProcessLock" resname="HDI2_DirClickProcessLock">
+				<source>Click on the "Another process locks and updates this contact" button</source>
+				<target>Click on the "Another process locks and updates this contact" button</target>
+			</trans-unit>
+			<trans-unit id="HDI2_BtnLock" resname="HDI2_BtnLock">
+				<source>Lock</source>
+				<target>Lock</target>
+			</trans-unit>
+			<trans-unit id="HDI2_DirTryLock" resname="HDI2_DirTryLock">
+				<source>Try to lock the contact</source>
+				<target>Try to lock the contact</target>
+			</trans-unit>
+			<trans-unit id="HDI2_BtnReloadAndLock" resname="HDI2_BtnReloadAndLock">
+				<source>Reload and lock</source>
+				<target>Reload and lock</target>
+			</trans-unit>
+			<trans-unit id="HDI2_MsgReloaded" resname="HDI2_MsgReloaded">
+				<source>The contact has been reloaded and locked</source>
+				<target>The contact has been reloaded and locked</target>
+			</trans-unit>
+			<trans-unit id="HDI2_DirClickReloadAndLock" resname="HDI2_DirClickReloadAndLock">
+				<source>Click on the "Reload and lock" button</source>
+				<target>Click on the "Reload and lock" button</target>
+			</trans-unit>
+			<trans-unit id="HDI2_MsgLockFailed" resname="HDI2_MsgLockFailed">
+				<source>The lock contact action failed</source>
+				<target>The lock contact action failed</target>
+			</trans-unit>
+			<trans-unit id="HDI2_MsgSaved" resname="HDI2_MsgSaved">
+				<source>The contact has been successfully saved</source>
+				<target>The contact has been successfully saved</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

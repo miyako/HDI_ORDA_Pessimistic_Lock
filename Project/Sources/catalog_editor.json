@@ -1,0 +1,105 @@
+{
+	"tables": {
+		"(Address)": {
+			"color": {
+				"red": "255",
+				"green": "255",
+				"blue": "255",
+				"alpha": "0"
+			},
+			"coordinates": {
+				"left": "652.1953125",
+				"top": "135.671875",
+				"width": "173.08203125",
+				"height": "321.87890625"
+			},
+			"displayable_fields_count": 13
+		},
+		"Contact": {
+			"color": {
+				"red": "255",
+				"green": "255",
+				"blue": "255",
+				"alpha": "0"
+			},
+			"coordinates": {
+				"left": "296.40625",
+				"top": "139.43359375",
+				"width": "236.03515625",
+				"height": "232.69921875"
+			},
+			"displayable_fields_count": 9,
+			"fields": {
+				"firstName": {
+					"color": {
+						"red": "255",
+						"green": "255",
+						"blue": "255",
+						"alpha": "0"
+					}
+				}
+			}
+		},
+		"(DICO)": {
+			"color": {
+				"red": "255",
+				"green": "255",
+				"blue": "255",
+				"alpha": "0"
+			},
+			"coordinates": {
+				"left": "0",
+				"top": "0",
+				"width": "137.56640625",
+				"height": "152.91796875"
+			},
+			"displayable_fields_count": 5,
+			"fields": {
+				"ID": {
+					"color": {
+						"red": "255",
+						"green": "255",
+						"blue": "255",
+						"alpha": "0"
+					}
+				}
+			}
+		},
+		"INFO": {
+			"color": {
+				"red": "255",
+				"green": "255",
+				"blue": "255",
+				"alpha": "0"
+			},
+			"coordinates": {
+				"left": "16.5234375",
+				"top": "93.484375",
+				"width": "148.13671875",
+				"height": "236.4296875"
+			},
+			"displayable_fields_count": 9,
+			"fields_ordering": 2,
+			"fields": {
+				"PageNumber": {
+					"position": 2
+				},
+				"TabTitle": {
+					"color": {
+						"red": "255",
+						"green": "255",
+						"blue": "255",
+						"alpha": "0"
+					},
+					"position": 3
+				},
+				"Description": {
+					"position": 4
+				},
+				"ID": {
+					"position": 1
+				}
+			}
+		}
+	}
+}
