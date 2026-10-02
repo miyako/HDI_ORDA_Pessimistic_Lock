@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+	<file datatype="plaintext" original="LockForm" source-language="en" target-language="ja">
+		<body>
+			<trans-unit id="LockForm_Title" resname="LockForm_Title">
+				<source>This process is locking the contact below and has updated its last name</source>
+				<target>このプロセスは下記の連絡先をロックし、姓を更新しました</target>
+			</trans-unit>
+			<trans-unit id="LockForm_BtnUnlock" resname="LockForm_BtnUnlock">
+				<source>Unlock</source>
+				<target>ロック解除</target>
+			</trans-unit>
+			<trans-unit id="LockForm_GoBack" resname="LockForm_GoBack">
+				<source>Go back to the main form to continue ...</source>
+				<target>メインフォームに戻って続行してください ...</target>
+			</trans-unit>
+			<trans-unit id="LockForm_LabelLockedContact" resname="LockForm_LabelLockedContact">
+				<source>Locked contact</source>
+				<target>ロック中の連絡先</target>
+			</trans-unit>
+			<trans-unit id="LockForm_Trace" resname="LockForm_Trace">
+				<source>Trace</source>
+				<target>トレース</target>
+			</trans-unit>
+			<trans-unit id="LockForm_DontClick" resname="LockForm_DontClick">
+				<source>(Don't click before step 3)</source>
+				<target>(手順 3 の前にクリックしないでください)</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

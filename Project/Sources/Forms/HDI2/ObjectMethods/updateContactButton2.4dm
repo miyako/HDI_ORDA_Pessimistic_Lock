@@ -4,6 +4,8 @@ If (btnTrace)
 End if 
 
 
+var $fg; $bg : Integer
+
 Form:C1466.saveLockStatus:=Form:C1466.contactToUpdate.save()
 
 If (Form:C1466.saveLockStatus.success)  //The save action is successful
@@ -17,7 +19,8 @@ If (Form:C1466.saveLockStatus.success)  //The save action is successful
 		
 		OBJECT SET ENABLED:C1123(*; "updateContactButton2"; False:C215)
 		
-		OBJECT SET RGB COLORS:C628(*; "contactToLock@"; 0x00529243; Background color:K23:2)
+		OBJECT GET RGB COLORS(*; "refSavedColour"; $fg; $bg)  // theme-aware colour defined in styleSheets.css
+		OBJECT SET RGB COLORS:C628(*; "contactToLock@"; $bg; Background color:K23:2)
 		OBJECT SET FONT STYLE:C166(*; "contactToLock@"; Bold:K14:2)
 		
 	End if 

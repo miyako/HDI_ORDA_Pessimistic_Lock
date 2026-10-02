@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+	<file datatype="plaintext" original="TableForms" source-language="en" target-language="en">
+		<body>
+			<trans-unit id="TableForm_INFO" resname="TableForm_INFO">
+				<source>INFO</source>
+				<target>INFO</target>
+			</trans-unit>
+			<trans-unit id="TableForm_ID" resname="TableForm_ID" xml:space="preserve">
+				<source>ID : </source>
+				<target>ID : </target>
+			</trans-unit>
+			<trans-unit id="TableForm_Page" resname="TableForm_Page">
+				<source>Page:</source>
+				<target>Page:</target>
+			</trans-unit>
+			<trans-unit id="TableForm_Title" resname="TableForm_Title">
+				<source>Title</source>
+				<target>Title</target>
+			</trans-unit>
+			<trans-unit id="TableForm_Employee" resname="TableForm_Employee">
+				<source>Employee</source>
+				<target>Employee</target>
+			</trans-unit>
+			<trans-unit id="TableForm_FirstName" resname="TableForm_FirstName" xml:space="preserve">
+				<source>firstname : </source>
+				<target>firstname : </target>
+			</trans-unit>
+			<trans-unit id="TableForm_LastName" resname="TableForm_LastName" xml:space="preserve">
+				<source>lastName : </source>
+				<target>lastName : </target>
+			</trans-unit>
+			<trans-unit id="TableForm_ManagerID" resname="TableForm_ManagerID" xml:space="preserve">
+				<source>managerID : </source>
+				<target>managerID : </target>
+			</trans-unit>
+			<trans-unit id="TableForm_EmployerID" resname="TableForm_EmployerID" xml:space="preserve">
+				<source>employerID : </source>
+				<target>employerID : </target>
+			</trans-unit>
+			<trans-unit id="TableForm_Salary" resname="TableForm_Salary" xml:space="preserve">
+				<source>salary : </source>
+				<target>salary : </target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+	<file datatype="plaintext" original="LockForm" source-language="en" target-language="en">
+		<body>
+			<trans-unit id="LockForm_Title" resname="LockForm_Title">
+				<source>This process is locking the contact below and has updated its last name</source>
+				<target>This process is locking the contact below and has updated its last name</target>
+			</trans-unit>
+			<trans-unit id="LockForm_BtnUnlock" resname="LockForm_BtnUnlock">
+				<source>Unlock</source>
+				<target>Unlock</target>
+			</trans-unit>
+			<trans-unit id="LockForm_GoBack" resname="LockForm_GoBack">
+				<source>Go back to the main form to continue ...</source>
+				<target>Go back to the main form to continue ...</target>
+			</trans-unit>
+			<trans-unit id="LockForm_LabelLockedContact" resname="LockForm_LabelLockedContact">
+				<source>Locked contact</source>
+				<target>Locked contact</target>
+			</trans-unit>
+			<trans-unit id="LockForm_Trace" resname="LockForm_Trace">
+				<source>Trace</source>
+				<target>Trace</target>
+			</trans-unit>
+			<trans-unit id="LockForm_DontClick" resname="LockForm_DontClick">
+				<source>(Don't click before step 3)</source>
+				<target>(Don't click before step 3)</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

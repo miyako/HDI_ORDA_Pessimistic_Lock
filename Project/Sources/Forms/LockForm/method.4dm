@@ -1,4 +1,5 @@
-C_OBJECT:C1216($statusLock; $statusSave; $statusUnLock)
+var $statusLock; $statusSave; $statusUnLock : Object
+var $message : Text
 
 
 If (btnTrace)
@@ -9,7 +10,7 @@ End if
 Case of 
 	: (Form event code:C388=On Load:K2:1)
 		
-		Form:C1466.contact:=ds:C1482.Contact.get(idToLock)  //Get the contact to lock
+		Form:C1466.contact:=ds:C1482.Contact.get(Form:C1466.idToLock)  //Get the contact to lock
 		
 		$statusLock:=Form:C1466.contact.lock()  //Lock the contact
 		
@@ -23,7 +24,10 @@ Case of
 		$statusUnLock:=Form:C1466.contact.unlock()  //Unlock the contact
 		
 		If ($statusUnLock.success)  // The unlock action is successful
-			ALERT:C41("The contact "+Form:C1466.contact.firstName+" "+Form:C1466.contact.lastName+" has been successfully unlocked")
+			$message:=Localized string("AlertContactUnlocked")
+			$message:=Replace string:C233($message; "{firstName}"; Form:C1466.contact.firstName)
+			$message:=Replace string:C233($message; "{lastName}"; Form:C1466.contact.lastName)
+			ALERT:C41($message)
 		End if 
 		
 End case 

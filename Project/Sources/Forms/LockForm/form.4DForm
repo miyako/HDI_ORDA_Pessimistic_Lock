@@ -27,18 +27,19 @@
 					"width": 520,
 					"height": 33,
 					"fontWeight": "bold",
-					"text": "This process is locking the contact below and has updated its last name"
+					"text": ":xliff:LockForm_Title",
+					"stroke": "automatic"
 				},
 				"Button": {
 					"type": "button",
 					"top": 135,
 					"left": 215,
 					"width": 80,
-					"height": 20,
 					"action": "cancel",
-					"text": "Unlock",
+					"text": ":xliff:LockForm_BtnUnlock",
 					"focusable": false,
-					"method": "ObjectMethods/Button.4dm"
+					"method": "ObjectMethods/Button.4dm",
+					"class": "default"
 				},
 				"Variable": {
 					"type": "input",
@@ -53,7 +54,8 @@
 					"dropping": "custom",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"Text1": {
 					"type": "text",
@@ -62,7 +64,8 @@
 					"width": 500,
 					"height": 33,
 					"textAlign": "center",
-					"text": "Go back to the main form to continue ..."
+					"text": ":xliff:LockForm_GoBack",
+					"stroke": "automatic"
 				},
 				"Text2": {
 					"type": "text",
@@ -71,7 +74,8 @@
 					"width": 100,
 					"height": 33,
 					"textAlign": "right",
-					"text": "Locked contact"
+					"text": ":xliff:LockForm_LabelLockedContact",
+					"stroke": "automatic"
 				},
 				"Check Box4": {
 					"type": "checkbox",
@@ -80,7 +84,7 @@
 					"width": 90,
 					"height": 20,
 					"dataSource": "btnTrace",
-					"text": "Trace",
+					"text": ":xliff:LockForm_Trace",
 					"focusable": false,
 					"events": [
 						"onClick"
@@ -93,7 +97,8 @@
 					"width": 220,
 					"height": 33,
 					"textAlign": "center",
-					"text": "(Don't click before step 3)"
+					"text": ":xliff:LockForm_DontClick",
+					"stroke": "automatic"
 				}
 			}
 		}

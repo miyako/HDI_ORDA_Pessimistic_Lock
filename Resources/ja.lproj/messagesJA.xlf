@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+	<file datatype="plaintext" original="messages" source-language="en" target-language="ja">
+		<body>
+			<trans-unit id="HDI_Title" resname="HDI_Title">
+				<source>work with pessimistic locking in ORDA?</source>
+				<target>ORDA で悲観的ロックを使用するには?</target>
+			</trans-unit>
+			<trans-unit id="HDI_Info" resname="HDI_Info">
+				<source>ORDA</source>
+				<target>ORDA</target>
+			</trans-unit>
+			<trans-unit id="BtnClose" resname="BtnClose">
+				<source>Close</source>
+				<target>閉じる</target>
+			</trans-unit>
+			<trans-unit id="ErrorViewProMain" resname="ErrorViewProMain">
+				<source>Sorry, this “How do I” (HDI) example demonstrates a 4D View Pro feature.</source>
+				<target>申し訳ありません。この「How do I」(HDI) サンプルは 4D View Pro の機能を紹介しています。</target>
+			</trans-unit>
+			<trans-unit id="ErrorViewProSub" resname="ErrorViewProSub">
+				<source>You must have a valid 4D View Pro license to continue.</source>
+				<target>続行するには有効な 4D View Pro ライセンスが必要です。</target>
+			</trans-unit>
+			<trans-unit id="ErrorWriteProMain" resname="ErrorWriteProMain">
+				<source>Sorry, this “How do I” (HDI) example demonstrates a 4D Write Pro feature.</source>
+				<target>申し訳ありません。この「How do I」(HDI) サンプルは 4D Write Pro の機能を紹介しています。</target>
+			</trans-unit>
+			<trans-unit id="ErrorWriteProSub" resname="ErrorWriteProSub">
+				<source>You must have a valid 4D Write Pro license to continue.</source>
+				<target>続行するには有効な 4D Write Pro ライセンスが必要です。</target>
+			</trans-unit>
+			<trans-unit id="AlertContactAlreadyLocked" resname="AlertContactAlreadyLocked">
+				<source>The contact is already locked by the other process&#13;&#13;Unlock the contact to continue</source>
+				<target>この連絡先は別のプロセスによって既にロックされています&#13;&#13;続行するには連絡先のロックを解除してください</target>
+			</trans-unit>
+			<trans-unit id="AlertProcessLocksContact" resname="AlertProcessLocksContact">
+				<source>This creates another process which locks and updates the edited contact.&#13;&#13;So the stamp will change</source>
+				<target>別のプロセスを作成し、編集中の連絡先をロックして更新します。&#13;&#13;そのため、スタンプが変更されます</target>
+			</trans-unit>
+			<trans-unit id="AlertContactUnlocked" resname="AlertContactUnlocked">
+				<source>The contact {firstName} {lastName} has been successfully unlocked</source>
+				<target>連絡先 {firstName} {lastName} のロックを解除しました</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,6 +1,4 @@
-//%attributes = {}
-
-C_BOOLEAN:C305(btnTrace)
+//%attributes = {"invisible":true}
 
 //Business logic related to ORDA
 
@@ -15,7 +13,7 @@ OBJECT SET VISIBLE:C603(*; "lock_KO@"; False:C215)
 OBJECT SET VISIBLE:C603(*; "reload_OK@"; False:C215)
 OBJECT SET VISIBLE:C603(*; "save_OK@"; False:C215)
 
-OBJECT SET RGB COLORS:C628(*; "contactToLock@"; 0x0000; Background color:K23:2)
+OBJECT SET RGB COLORS:C628(*; "contactToLock@"; Foreground color; Background color:K23:2)
 OBJECT SET FONT STYLE:C166(*; "contactToLock@"; Plain:K14:1)
 
 buildDataFromJSON

@@ -1,4 +1,4 @@
-C_OBJECT:C1216($unLockStatus)
+var $unLockStatus : Object
 
 
 If (btnTrace)

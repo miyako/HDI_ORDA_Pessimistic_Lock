@@ -37,6 +37,24 @@
 					"events": [
 						"onClick"
 					]
+				},
+				"refReloadedColour": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 1,
+					"height": 1,
+					"class": "ref-reloaded-colour",
+					"stroke": "transparent"
+				},
+				"refSavedColour": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 1,
+					"height": 1,
+					"class": "ref-saved-colour",
+					"stroke": "transparent"
 				}
 			}
 		},
@@ -53,7 +71,8 @@
 					"fontFamily": "System Font",
 					"fontSize": 14,
 					"fontWeight": "bold",
-					"text": "In this part you will learn how to query the DataStore"
+					"text": ":xliff:HDI2_IntroQueryDataStore",
+					"stroke": "automatic"
 				},
 				"information4": {
 					"type": "input",
@@ -73,7 +92,8 @@
 					"dropping": "custom",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"information3": {
 					"type": "input",
@@ -93,7 +113,8 @@
 					"dropping": "custom",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"Line9": {
 					"type": "line",
@@ -101,7 +122,7 @@
 					"left": 120,
 					"width": 680,
 					"sizingX": "grow",
-					"stroke": "#696969"
+					"class": "muted"
 				}
 			}
 		},
@@ -125,7 +146,8 @@
 					"dropping": "custom",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"Text1": {
 					"type": "text",
@@ -136,20 +158,21 @@
 					"fontFamily": "System Font",
 					"fontSize": 18,
 					"fontWeight": "bold",
-					"text": "Edit contact example"
+					"text": ":xliff:HDI2_EditContactTitle",
+					"stroke": "automatic"
 				},
 				"processLockContactButton": {
 					"type": "button",
 					"top": 325,
 					"left": 560,
 					"width": 320,
-					"height": 20,
-					"text": "Another process locks and updates this contact",
+					"text": ":xliff:HDI2_BtnProcessLock",
 					"focusable": false,
 					"method": "ObjectMethods/processLockContactButton.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"updateContactDirection": {
 					"type": "text",
@@ -158,7 +181,8 @@
 					"width": 240,
 					"height": 20,
 					"fontWeight": "bold",
-					"text": "Update the contact and try to save it"
+					"text": ":xliff:HDI2_DirUpdateContact",
+					"stroke": "automatic"
 				},
 				"save_KO_StatusText": {
 					"type": "text",
@@ -168,7 +192,8 @@
 					"height": 20,
 					"textAlign": "left",
 					"fontWeight": "bold",
-					"text": "statusText:"
+					"text": ":xliff:HDI2_LabelStatusText",
+					"stroke": "automatic"
 				},
 				"save_KO_StatusTextValue": {
 					"type": "input",
@@ -187,7 +212,8 @@
 					"dropping": "custom",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"save_KO_updateContactMessage": {
 					"type": "text",
@@ -195,9 +221,9 @@
 					"left": 610,
 					"width": 280,
 					"height": 20,
-					"stroke": "#DC143C",
 					"fontWeight": "bold",
-					"text": "The update contact action failed"
+					"text": ":xliff:HDI2_MsgUpdateFailed",
+					"class": "msg-error"
 				},
 				"processUpdateContactButtonDirection4": {
 					"type": "input",
@@ -216,7 +242,8 @@
 					"dropping": "custom",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"save_KO_LockInfoValue": {
 					"type": "input",
@@ -232,7 +259,9 @@
 					"dropping": "custom",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"stroke": "automatic",
+					"fill": "automatic"
 				},
 				"save_KO_LockKindText": {
 					"type": "text",
@@ -242,7 +271,8 @@
 					"height": 20,
 					"textAlign": "left",
 					"fontWeight": "bold",
-					"text": "lockKindText:"
+					"text": ":xliff:HDI2_LabelLockKindText",
+					"stroke": "automatic"
 				},
 				"save_KO_LockKindTextValue": {
 					"type": "input",
@@ -261,7 +291,8 @@
 					"dropping": "custom",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"save_KO_Status": {
 					"type": "text",
@@ -271,7 +302,8 @@
 					"height": 20,
 					"textAlign": "left",
 					"fontWeight": "bold",
-					"text": "status:"
+					"text": ":xliff:HDI2_LabelStatus",
+					"stroke": "automatic"
 				},
 				"save_KO_StatusValue": {
 					"type": "input",
@@ -290,7 +322,8 @@
 					"dropping": "custom",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"save_KO_LockInfoText": {
 					"type": "text",
@@ -300,7 +333,8 @@
 					"height": 20,
 					"textAlign": "left",
 					"fontWeight": "bold",
-					"text": "lockInfo:"
+					"text": ":xliff:HDI2_LabelLockInfo",
+					"stroke": "automatic"
 				},
 				"Check Box4": {
 					"type": "checkbox",
@@ -309,7 +343,7 @@
 					"width": 80,
 					"height": 20,
 					"dataSource": "btnTrace",
-					"text": "Trace",
+					"text": ":xliff:HDI2_Trace",
 					"focusable": false,
 					"events": [
 						"onClick"
@@ -323,7 +357,9 @@
 					"height": 20,
 					"dataSource": "Form:C1466.contactToUpdate.firstName",
 					"dragging": "none",
-					"dropping": "none"
+					"dropping": "none",
+					"stroke": "automatic",
+					"fill": "automatic"
 				},
 				"Text23": {
 					"type": "text",
@@ -332,7 +368,8 @@
 					"width": 90,
 					"height": 20,
 					"textAlign": "right",
-					"text": "First name"
+					"text": ":xliff:HDI2_LabelFirstName",
+					"stroke": "automatic"
 				},
 				"contactToLockLastName": {
 					"type": "input",
@@ -345,7 +382,9 @@
 					"dropping": "custom",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"stroke": "automatic",
+					"fill": "automatic"
 				},
 				"Text24": {
 					"type": "text",
@@ -354,7 +393,8 @@
 					"width": 90,
 					"height": 20,
 					"textAlign": "right",
-					"text": "Last name"
+					"text": ":xliff:HDI2_LabelLastName",
+					"stroke": "automatic"
 				},
 				"contactToLockState": {
 					"type": "input",
@@ -367,7 +407,9 @@
 					"dropping": "custom",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"stroke": "automatic",
+					"fill": "automatic"
 				},
 				"Text4": {
 					"type": "text",
@@ -376,20 +418,21 @@
 					"width": 90,
 					"height": 20,
 					"textAlign": "right",
-					"text": "State"
+					"text": ":xliff:HDI2_LabelState",
+					"stroke": "automatic"
 				},
 				"updateContactButton": {
 					"type": "button",
 					"top": 370,
 					"left": 356,
 					"width": 120,
-					"height": 20,
-					"text": "Save",
+					"text": ":xliff:HDI2_BtnSave",
 					"focusable": false,
 					"method": "ObjectMethods/updateContactButton.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"Oval1": {
 					"type": "oval",
@@ -397,8 +440,8 @@
 					"left": 60,
 					"width": 25,
 					"height": 26,
-					"fill": "#6495ED",
-					"stroke": "transparent"
+					"stroke": "transparent",
+					"class": "step-badge"
 				},
 				"Text9": {
 					"type": "text",
@@ -419,8 +462,8 @@
 					"left": 60,
 					"width": 25,
 					"height": 26,
-					"fill": "#6495ED",
-					"stroke": "transparent"
+					"stroke": "transparent",
+					"class": "step-badge"
 				},
 				"Text34": {
 					"type": "text",
@@ -441,8 +484,8 @@
 					"left": 60,
 					"width": 25,
 					"height": 26,
-					"fill": "#6495ED",
-					"stroke": "transparent"
+					"stroke": "transparent",
+					"class": "step-badge"
 				},
 				"Text35": {
 					"type": "text",
@@ -474,7 +517,8 @@
 					"dropping": "custom",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"processUpdateContactButtonDirection6": {
 					"type": "text",
@@ -483,20 +527,21 @@
 					"width": 460,
 					"height": 20,
 					"fontWeight": "bold",
-					"text": "Click on the \"Another process locks and updates this contact\" button"
+					"text": ":xliff:HDI2_DirClickProcessLock",
+					"stroke": "automatic"
 				},
 				"lockContactButton": {
 					"type": "button",
 					"top": 440,
 					"left": 356,
 					"width": 120,
-					"height": 20,
-					"text": "Lock",
+					"text": ":xliff:HDI2_BtnLock",
 					"focusable": false,
 					"method": "ObjectMethods/lockContactButton.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"lockContactDirection1": {
 					"type": "text",
@@ -505,20 +550,21 @@
 					"width": 159,
 					"height": 20,
 					"fontWeight": "bold",
-					"text": "Try to lock the contact"
+					"text": ":xliff:HDI2_DirTryLock",
+					"stroke": "automatic"
 				},
 				"reloadAndLockButton": {
 					"type": "button",
 					"top": 540,
 					"left": 359,
 					"width": 130,
-					"height": 20,
-					"text": "Reload and lock",
+					"text": ":xliff:HDI2_BtnReloadAndLock",
 					"focusable": false,
 					"method": "ObjectMethods/reloadAndLockButton.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"reload_OK_lockContactMessage": {
 					"type": "text",
@@ -526,9 +572,9 @@
 					"left": 610,
 					"width": 280,
 					"height": 20,
-					"stroke": "#800080",
 					"fontWeight": "bold",
-					"text": "The contact has been reloaded and locked"
+					"text": ":xliff:HDI2_MsgReloaded",
+					"class": "msg-reloaded"
 				},
 				"Oval9": {
 					"type": "oval",
@@ -536,8 +582,8 @@
 					"left": 60,
 					"width": 25,
 					"height": 26,
-					"fill": "#6495ED",
-					"stroke": "transparent"
+					"stroke": "transparent",
+					"class": "step-badge"
 				},
 				"Text18": {
 					"type": "text",
@@ -569,7 +615,8 @@
 					"dropping": "custom",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"unlockContactDirection2": {
 					"type": "text",
@@ -578,7 +625,8 @@
 					"width": 270,
 					"height": 20,
 					"fontWeight": "bold",
-					"text": "Click on the \"Reload and lock\" button"
+					"text": ":xliff:HDI2_DirClickReloadAndLock",
+					"stroke": "automatic"
 				},
 				"updateContactDirection1": {
 					"type": "text",
@@ -587,20 +635,21 @@
 					"width": 250,
 					"height": 20,
 					"fontWeight": "bold",
-					"text": "Update the contact and try to save it"
+					"text": ":xliff:HDI2_DirUpdateContact",
+					"stroke": "automatic"
 				},
 				"updateContactButton2": {
 					"type": "button",
 					"top": 640,
 					"left": 359,
 					"width": 120,
-					"height": 20,
-					"text": "Save",
+					"text": ":xliff:HDI2_BtnSave",
 					"focusable": false,
 					"method": "ObjectMethods/updateContactButton2.4dm",
 					"events": [
 						"onClick"
-					]
+					],
+					"class": "default"
 				},
 				"updateContactButtonDirection1": {
 					"type": "input",
@@ -619,7 +668,8 @@
 					"dropping": "custom",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"lock_KO_lockContactMessage": {
 					"type": "text",
@@ -627,9 +677,9 @@
 					"left": 610,
 					"width": 250,
 					"height": 20,
-					"stroke": "#DC143C",
 					"fontWeight": "bold",
-					"text": "The lock contact action failed"
+					"text": ":xliff:HDI2_MsgLockFailed",
+					"class": "msg-error"
 				},
 				"lock_KO_Status": {
 					"type": "text",
@@ -639,7 +689,8 @@
 					"height": 20,
 					"textAlign": "left",
 					"fontWeight": "bold",
-					"text": "status:"
+					"text": ":xliff:HDI2_LabelStatus",
+					"stroke": "automatic"
 				},
 				"lock_KO_StatusValue": {
 					"type": "input",
@@ -658,7 +709,8 @@
 					"dropping": "custom",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"lock_KO_StatusText": {
 					"type": "text",
@@ -668,7 +720,8 @@
 					"height": 20,
 					"textAlign": "left",
 					"fontWeight": "bold",
-					"text": "statusText:"
+					"text": ":xliff:HDI2_LabelStatusText",
+					"stroke": "automatic"
 				},
 				"lock_KO_StatusTextValue": {
 					"type": "input",
@@ -687,7 +740,8 @@
 					"dropping": "custom",
 					"events": [
 						"onDataChange"
-					]
+					],
+					"stroke": "automatic"
 				},
 				"save_OK_ContactMessage": {
 					"type": "text",
@@ -695,9 +749,9 @@
 					"left": 610,
 					"width": 280,
 					"height": 20,
-					"stroke": "#008000",
 					"fontWeight": "bold",
-					"text": "The contact has been sucessfully saved"
+					"text": ":xliff:HDI2_MsgSaved",
+					"class": "msg-success"
 				},
 				"Oval10": {
 					"type": "oval",
@@ -705,8 +759,8 @@
 					"left": 60,
 					"width": 25,
 					"height": 26,
-					"fill": "#6495ED",
-					"stroke": "transparent"
+					"stroke": "transparent",
+					"class": "step-badge"
 				},
 				"Text3": {
 					"type": "text",

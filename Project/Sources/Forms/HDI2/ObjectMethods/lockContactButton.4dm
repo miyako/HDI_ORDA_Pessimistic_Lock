@@ -10,7 +10,7 @@ If (Not:C34(Form:C1466.saveLockStatus.success))  // The lock action failed
 	
 	Case of 
 		: (Form:C1466.saveLockStatus.status=dk status locked:K85:21)  // The entity is already locked
-			ALERT:C41("The contact is already locked by the other process"+Char:C90(13)+Char:C90(13)+"Unlock the contact to continue")
+			ALERT:C41(Localized string("AlertContactAlreadyLocked"))
 			
 		: (Form:C1466.saveLockStatus.status=dk status stamp has changed:K85:20)  // The stamp of the entity has changed
 			

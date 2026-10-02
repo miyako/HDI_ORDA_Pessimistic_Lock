@@ -1,4 +1,2 @@
 //%attributes = {"invisible":true}
-C_LONGINT:C283(00_Start; $1)
-C_LONGINT:C283(PS_locker_and_updater; $1)
-C_LONGINT:C283(PS_locker_and_updater; $2)
+  // 00_Start and PS_locker_and_updater declare their parameters with #DECLARE
